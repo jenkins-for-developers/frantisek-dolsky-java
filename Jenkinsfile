@@ -10,7 +10,7 @@ pipeline {
 
     stage ('Build') {
       steps {
-        withMaven(jdk: 'Java 8', maven: 'Maven 3') {
+        withMaven(jdk: 'OpenJDK 8', maven: 'Maven 3') {
           sh "mvn clean verify"
         }
       }
