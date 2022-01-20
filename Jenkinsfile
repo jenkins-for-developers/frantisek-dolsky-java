@@ -18,7 +18,7 @@ pipeline {
 
     stage ('Verify version') {
       steps {
-        sh """java -jar target/moje-apka.jar --version"""
+        sh """java -jar target/moje-apka-*.jar --version"""
       }
     }
   }
